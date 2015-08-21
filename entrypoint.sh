@@ -18,4 +18,4 @@ if [[ ${DB_PASS} == "" ]]; then
 	exit 1
 fi
 
-mysqldump --user="${DB_USER}" --password="${DB_PASS}" --host="mysql" "${DB_NAME}"
+mysqldump --user="${DB_USER}" --password="${DB_PASS}" --host="mysql" "$@" "${DB_NAME}"
